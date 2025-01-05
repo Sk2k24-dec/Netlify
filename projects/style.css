@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 90vh;
+    background-color: #D9EAFD;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+
+.title {
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+    margin-bottom: 5%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #BCCCDC;
+    justify-content: center;
+    align-items: center;
+    height: 70vmin;
+    width: 70vmin;
+    margin: auto;
+    border-radius: 1rem;
+    padding-top: 2vmax;
+    padding-left: 2vmax;
+    padding-right: 2vmax;
+    padding-bottom: 8vmax;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.boxes {
+    background-color: #9AA6B2;
+    border: 1px solid #333333;
+    width: 30%;
+    height: 30%;
+    border-radius: 1rem;
+    margin: 1%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 300%;
+    color: #123524;
+}
+
+.extra_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vmin;
+    margin-top: 2vmin;
+}
+
+.reset {
+
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 1rem;
+    width: 20%;
+    height: 70%;
+    font-size: 3vmin;
+    /* display: inline; */
+
+}
+
+.newGame {
+    background-color: rgba(0, 255, 0, 0.5);
+    border-radius: 1rem;
+    width: 40%;
+    height: 70%;
+    font-size: 3vmin;
+
+}
+
+.winnerBanner{
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+    background-color: #CDC1FF;
+    width: 60%;
+    min-width: fit-content;
+    min-height: fit-content;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    height: 10%;
+    border-radius: 1rem;
+    display: none;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
