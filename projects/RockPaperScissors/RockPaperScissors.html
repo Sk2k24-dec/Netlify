@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="RPS_style.css">
+    <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+    <div class="gameContainer">
+        <div class="topBar">Rock Paper Scissors</div>
+        <marquee id="marquee" behavior="scroll" scrollamount="10" direction="left">Please open this site on desktop 😭 | to remove, click on me 🤗</marquee>
+        <div class="icons">
+
+            <div id="img1"> 
+                <img class="images" id="img1" src="images/rock.png" alt="rock">
+            </div>
+
+            <div id="img2"> 
+                <img class="images" id="img2" src="images/paper.png" alt="rock">
+            </div>
+            
+            <div id="img3"> 
+                <img class="images" id="img3" src="images/scissors.png" alt="rock">
+            </div>
+
+        </div>
+        <div class="scoreBoard">
+            <div class="player">
+                <p id="scoreOfPlayer" class="score">0</p>
+                <p class="name">YOU</p>
+            </div>
+            <div class="computer">
+                <p id="scoreOfComputer" class="score">0</p>
+                <p class="name">AI</p>
+            </div>
+        </div>
+        <div class="resultBoard">Hajime!</div>
+        <button class="reset">reset</button>
+    </div>
+    <script src="RPS_script.js"></script>
+</body>
+
+</html>
