@@ -121,6 +121,7 @@
     padding-bottom: 5%;
     font-family: "Kanit",sans-serif;
     font-size: large;
+    max-width: 480px;
 }
 .viewButtons{
     
