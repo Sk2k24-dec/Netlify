@@ -21,20 +21,20 @@ const checker = (resultBoard) => {
     // user wins
     if ((user_selection === "rock" && computer_selection === "scissors") || (user_selection === "scissors" && computer_selection === "paper") || (user_selection === "paper" && computer_selection === "rock")) {
         user_score += 1;
-        resultBoard.innerText ="You WON!";
+        resultBoard.innerText ="You WON! "+user_selection+" beats "+computer_selection;
         score_of_player.innerText = user_score;
         resultBoard.style.backgroundColor = "green";
     }
     // user looses
     else if ((user_selection === "rock" && computer_selection==="paper")||(user_selection === "paper" && computer_selection==="scissors")||(user_selection === "scissors" && computer_selection==="rock")){
         computer_score+=1;
-        resultBoard.innerText ="You LOST!";
+        resultBoard.innerText ="You LOST! "+computer_selection+" beats "+user_selection;
         score_of_computer.innerText = computer_score;
         resultBoard.style.backgroundColor = "red";
     }
-    // draw situationo 
+    // draw situation 
     else{
-        resultBoard.innerText ="It is a DRAW!";
+        resultBoard.innerText ="It is a DRAW! "+user_selection+" V/S "+computer_selection;
         resultBoard.style.backgroundColor = "#727D73";
     }
 }
@@ -53,8 +53,8 @@ icons.forEach((icon) => {
         else if (evt.target.id === "img3") {
             user_selection = "scissors";
         }
+        computer_selection = value_preset[Math.trunc(Math.random() * 3)];
         checker(resultBoard);
-        computer_selection = value_preset[Math.trunc(Math.random() * 3)];;
     })
 })
 
