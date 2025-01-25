@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="sk2k25"> 
+    <link rel="stylesheet" href="CC_style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Currency Converter</div>
+        <div class="main">
+            <div class="withoutSubmit">
+                <div class="fromDiv">
+                    <p>From</p>
+                    <select class="selects" name="select" id="select1">
+                        <option value="USD">USD</option>
+                        <option value="INR">INR</option>
+                    </select>
+                </div>
+    
+                <div class="amount">
+                    <p>Amount</p>
+                    <input type="number" name="input" id="input1" placeholder="enter amount">
+                </div>
+                
+                <div class="toDiv">
+                    <p>To</p>
+                    <select class="selects" name="select" id="select2">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="submitDiv">
+                <button class="submit">Convert</button>
+            </div>
+        </div>
+        <img class="images" src="images/loading.png" alt="loading...">
+        <div class="resultBoard"></div>
+    </div>
+    <script src="CC_script.js"></script>
+</body>
+</html>
