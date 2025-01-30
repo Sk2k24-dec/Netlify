@@ -82,6 +82,7 @@
 }
 .fieldset{
     min-width: fit-content;
+    min-height: 200px; 
     padding: 5%;
     margin: 10px;
     border: 2px solid rgb(180, 179, 179);

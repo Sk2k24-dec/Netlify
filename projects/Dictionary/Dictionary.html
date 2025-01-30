@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sk2k25">
+    <link rel="stylesheet" href="Dic_style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <marquee behavior="" direction="left" scrollamount = "10" class="banner">press ENTER to search and click TRANSLATE to get Bengali translation | Click here to remove it</marquee>
+    <div class="container">
+        <h1>Dictionary</h1>
+        <div class="main">
+            <input class="input" type="text" placeholder="enter word to search">
+            <a class="translateBtn" href=""><button class="btn">Translate</button></a>
+        </div>
+        <div class="resultBoard">
+            <img class="img" src="images/loading.gif" alt="loading">
+            <div class="results">
+                <p class="result"></p>
+                <p class="result"></p>
+                <p class="result" id="def"></p>
+                <div class="learnMore">
+                    <a target="_blank" class="link" href="http://"><button class="more">Learn More</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="Dic_script.js"></script>
+</body>
+
+</html>
