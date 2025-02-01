@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 6rem;
+    background-color: #A6F1E0;
+    
+}
+
+.greetings, .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    min-width: fit-content;
+    min-height: fit-content;
+    background-color: #F4F8D3;
+}
+.containerTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.container .quote{
+ 
+    font-family: monospace;
+    font-size: x-large;
+    padding: 1rem;
+    min-height: 30vh;
+    min-width: 30rem;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px black;
+    background-color: #F7CFD8;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: auto;
+}
+
+.containerBottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.containerBottom .btn{
+    width: 10rem;
+    border-radius: 2rem;
+    background-color: #B771E5;
+    color: whitesmoke;
+    font-size: large;
+    text-shadow: 2px 2px 15px black;
+    /* text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; */
+}
+.btn:hover{
+    border: 3px solid rgb(61, 8, 160);
+    box-shadow: 0px 0px 10px darkgray;
+
+}
+.btn:active{
+    background-color: #cf86ff;
+}
+.container p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: fit-content;
+    margin: 2rem;
+}
+.container button{
+    height: 3rem;
+    width: 5rem;
+    background-color: cornsilk;
+}
+
+.noScript{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px 0px 100vh 0px;
+}
+
+
+
+/*  3rd party plugins for loading animation */
+.loader {
+    display: none;
+    width: 45px;
+    aspect-ratio: 1;
+    --c: no-repeat linear-gradient(#000 calc(50% - 10px),#0000 0 calc(50% + 10px),#000 0);
+    background: 
+      var(--c) 0%   100%,
+      var(--c) 50%  100%,
+      var(--c) 100% 100%;
+    background-size: 20% calc(200% + 20px);
+    animation:loading 1s infinite linear;
+  }
+@keyframes loading {
+    33%  {background-position: 0% 50%,50% 100%,100% 100%}
+    50%  {background-position: 0%  0%,50%  50%,100% 100%}
+    66%  {background-position: 0%  0%,50%   0%,100%  50%}
+    100% {background-position: 0%  0%,50%   0%,100%   0%}
+}
